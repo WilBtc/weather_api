@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+    <title>The Weather Rangers Api</title>
+</head>
+
+<body>
+    <h1>The Weather Rangers App</h1>
+    <form id="weatherForm">
+        <label for="zipCode">Enter Zip Code: </label>
+        <input type="text" id="zipCode" required>
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <div id="weatherInfo">
+        <h2>Weather Information</h2>
+        <p><strong>High:</strong> <span id="highTemp">--</span>°F</p>
+        <p><strong>Low:</strong> <span id="lowTemp">--</span>°F</p>
+        <p><strong>Forecast:</strong> <span id="forecast">--</span></p>
+        <p><strong>Humidity:</strong> <span id="humidity">--</span>%</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
